@@ -1,10 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import '../tailwind.css';
+import { Page } from './pages/Page';
 
-function App() {
-  return (
-    <>
-    </>
-  );
-}
 
-export default App;
+ReactDOM.render(
+  <React.StrictMode>
+    <Page />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
